@@ -1,0 +1,4 @@
+*.nc
+*.cdsapirc
+*.grib
+.venv
