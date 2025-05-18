@@ -21,7 +21,7 @@ import xarray as xr
 from datetime import datetime, timedelta
 
 
-def load_radiation_data(filepath):
+def load_radiation_data(filepath="dataset.grib"):
     """
     Load solar radiation data using earthkit.data
     
@@ -52,7 +52,7 @@ def load_radiation_data(filepath):
     return radiation_data
 
 
-def load_dem_data(filepath):
+def load_dem_data(filepath="dataset.grib"):
     """
     Load Digital Elevation Model (DEM) data using rioxarray
     
@@ -451,7 +451,7 @@ def main():
     Main function to run the solar radiation and terrain analysis
     """
     # File paths
-    radiation_file = "radiation_data.nc"  # or "cams_radiation_data.grib"
+    radiation_file = "dataset.grib"  # or "cams_radiation_data.grib"
     dem_file = "EU_DEM.tif"
     
     # Coordinates for analysis (example: somewhere in Europe)
