@@ -2,3 +2,4 @@
 *.cdsapirc
 *.grib
 .venv
+.DS_Store
